@@ -76,13 +76,13 @@ jobs:
     
       # Build Java
       # https://github.com/marketplace/actions/setup-java-jdk#Usage
-      # - if: matrix.language == 'java-kotlin'
-      #   name: Build Java Version 'X' (See Doc for other details)
-      #   uses: actions/setup-java@v3
-      #   with:
-      #     distribution: 'microsoft' # See 'Supported distributions' for available options
-      #     java-version: '16'
-      # - run: java HelloWorldApp.java
+       - if: matrix.language == 'java-kotlin'
+         name: Build Java Version 'X' (See Doc for other details)
+         uses: actions/setup-java@v3
+         with:
+           distribution: 'microsoft' # See 'Supported distributions' for available options
+           java-version: '16'
+       - run: java HelloWorldApp.java
       # End of Java Build Example 
 
       # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
