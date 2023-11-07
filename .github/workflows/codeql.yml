@@ -80,8 +80,8 @@ jobs:
          name: Build Java Version 'X' (See Doc for other details)
          uses: actions/setup-java@v3
          with:
-           distribution: 'microsoft' # See 'Supported distributions' for available options
-           java-version: '16'
+           distribution: 'zulu' # See 'Supported distributions' for available options
+           java-version: '17'
       # - run: java HelloWorldApp.java
       # End of Java Build Example 
 
